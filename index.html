@@ -1,22 +1,40 @@
-<html lang="en"> 
+<!DOCTYPE html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-     crossorigin=""/>
-     <link rel="stylesheet" href="styles.css">
-      <!-- Make sure you put this AFTER Leaflet's CSS -->
- <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-     crossorigin=""></script>
-    <title>Document</title>
+    <title>Biografía Daniela</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 </head>
 <body>
-<h1>Daniela Ramirez</h1>
-<div>aquí va la biografia</div>
-<div>aquí va la foto</div>
+
+<!-- HERO CON DEGRADADO MORADO -->
+<section class="hero">
+    <h1 class="gradient-title">Daniela Ramirez</h1>
+</section>
+
+<!-- FOTO -->
+<div class="foto-container">
+    <img src="foto.jpg" alt="Mi foto" class="avatar">
+</div>
+
+<!-- BIOGRAFIA -->
+<div class="bio">
+    <p>
+        Hola 👋, soy <strong>Daniela</strong>.<br>
+        Tengo 26 años y soy administradora ambiental de la Universidad Distrital Francisco José de Caldas.<br>
+        Me encanta la naturaleza, caminar al aire libre y la música.
+    </p>
+</div>
+
+<!-- MAPA -->
 <div id="map"></div>
+
 <script src="programa.js"></script>
 </body>
 </html>
+

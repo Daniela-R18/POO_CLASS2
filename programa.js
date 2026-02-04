@@ -1,7 +1,10 @@
-var map = L.map('map').setView([4.609722, -74.08175], 13);
-L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+var map = L.map('map').setView([4.60971, -74.08175], 13); // Bogotá
+
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '&copy; OpenStreetMap contributors'
 }).addTo(map);
 
-var marker = L.marker([4.609722, -74.08175]).addTo(map);
+// Marker con popup cute
+L.marker([4.60971, -74.08175]).addTo(map)
+  .bindPopup('<b>¡Aquí estoy!</b><br>Mi ciudad 💜')
+  .openPopup();
